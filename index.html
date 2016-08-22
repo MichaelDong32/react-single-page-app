@@ -7,12 +7,11 @@
     <body>
       <div id="app"></div>
 
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom-server.js"></script>
-
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
 
       <script>
-      var routeElement =
+      var rootElement =
         React.createElement('div', {},
           React.createElement('h1', {}, "Contacts"),
           React.createElement('ul', {},
@@ -28,7 +27,7 @@
         )
 
       ReactDOM.render(
-        routeElement,
+        rootElement,
         document.getElementById("app"))
       </script>
       </body>
