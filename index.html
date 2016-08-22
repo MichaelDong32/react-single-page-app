@@ -5,30 +5,30 @@
       <title>A single page react app</title>  
     </head>
     <body>
-      <div id="app"></div>
+      <div id="react-app"></div>
 
       <script type="text/javascript" src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+      </body>
+       </html>
 
       <script>
-      var rootElement =
-        React.createElement('div', {},
-          React.createElement('h1', {}, "Contacts"),
-          React.createElement('ul', {},
-            React.createElement('li', {},
-             React.createElement('h2', {}, "Michael Dong"),
-             React.createElement('a', {href: 'mailto:mjdong32@gmail.com'}, "mjdong32@gmail.com"),
-             ),
-            React.createElement('li', {},
-             React.createElement('h2', {}, "Brett Coram"),
-             React.createElement('a', {href: 'mailto:brettcoram@gmail.com'}, "brettcoram@gmail.com"),
-             )
-           )
-        )
 
-      ReactDOM.render(
-        rootElement,
-        document.getElementById("app"))
+      var ui =
+      React.createElement('div', {}, 
+        React.createElement('h1', {}, "Contacts"),
+        React.createElement('ul', {},
+          React.createElement('li', {},
+            React.createElement('h2', {}, "Michael Dong"),
+            React.createElement('a', {href: 'mailto:mjdong32@gmail.com'}, 'mjdong32@gmail.com')
+          ),
+          React.createElement('li', {},
+            React.createElement('h2', {}, "Brett Coram"),
+            React.createElement('a', {href: 'mailto:brettcoram@gmail.com'}, 'brettcoram@gmail.com')
+          )
+        )
+      )
+
+    ReactDOM.render(ui, document.getElementById('react-app'))
       </script>
-      </body>
-  </html>
+ 
