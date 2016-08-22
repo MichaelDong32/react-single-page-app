@@ -10,24 +10,26 @@
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom-server.js"></script>
 
-    </body>
+
+      <script>
+      var routeElement =
+        React.createElement('div', {},
+          React.createElement('h1', {}, "Contacts"),
+          React.createElement('ul', {},
+            React.createElement('li', {},
+             React.createElement('h2', {}, "Michael Dong"),
+             React.createElement('a', {href: 'mailto:mjdong32@gmail.com'}, "mjdong32@gmail.com"),
+             ),
+            React.createElement('li', {},
+             React.createElement('h2', {}, "Brett Coram"),
+             React.createElement('a', {href: 'mailto:brettcoram@gmail.com'}, "brettcoram@gmail.com"),
+             )
+           )
+        )
+
+      ReactDOM.render(
+        routeElement,
+        document.getElementById("app"))
+      </script>
+      </body>
   </html>
-
-  var route element =
-    React.createElement('div', {},
-      React.createElement('h1', {}, "Contacts"),
-      React.createElement('ul', {},
-        React.createElement('li', {},
-         React.createElement('h2', {}, "Michael Dong"),
-         React.createElement('a', {href: 'mailto:mjdong32@gmail.com'}, "mjdong32@gmail.com"),
-         ),
-        React.createElement('li', {},
-         React.createElement('h2', {}, "Brett Coram"),
-         React.createElement('a', {href: 'mailto:brettcoram@gmail.com'}, "brettcoram@gmail.com"),
-         )
-       )
-    )
-
-  ReactDOM.render(
-    rootelement,
-    document.getElementById("app"))
